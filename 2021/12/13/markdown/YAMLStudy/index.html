@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>YAML | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="#YAML语言 YAML Ain&#96;t Markup Language 以数据为中心的标记语言(文件一般以.yml .yaml结尾)  使用条件  SnakeYAML库添加到classpath下(spring-boot-starter-web或spring-booter-starter都对SnakeYAML库做了集成,有一SpringBoot便会自动添加到classpath下)   YAML语法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="YAML">
+<meta property="og:url" content="http://example.com/2021/12/13/markdown/YAMLStudy/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#YAML语言 YAML Ain&#96;t Markup Language 以数据为中心的标记语言(文件一般以.yml .yaml结尾)  使用条件  SnakeYAML库添加到classpath下(spring-boot-starter-web或spring-booter-starter都对SnakeYAML库做了集成,有一SpringBoot便会自动添加到classpath下)   YAML语法">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-12-13T09:58:44.313Z">
+<meta property="article:modified_time" content="2021-12-13T10:05:27.230Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="YAML">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-markdown/YAMLStudy" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/12/13/markdown/YAMLStudy/" class="article-date">
+  <time class="dt-published" datetime="2021-12-13T09:58:44.313Z" itemprop="datePublished">2021-12-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      YAML
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>#<em><strong>YAML语言</strong></em></p>
+<p>YAML Ain`t Markup Language 以数据为中心的标记语言(文件一般以.yml .yaml结尾)</p>
+<ul>
+<li><p>使用条件</p>
+<ul>
+<li>SnakeYAML库添加到classpath下(<code>spring-boot-starter-web</code>或<code>spring-booter-starter</code>都对SnakeYAML库做了集成,有一SpringBoot便会自动添加到classpath下)</li>
+</ul>
+</li>
+<li><p>YAML语法</p>
+<ul>
+<li>使用缩进表示层级关系</li>
+<li>缩进时不允许Tab键,只允许空格</li>
+<li>缩进空格数不重要(但同级元素就必须左对齐)</li>
+<li>大小写敏感</li>
+</ul>
+</li>
+</ul>
+<p>e.g.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">spring:</span><br><span class="line">  profiles: dev</span><br><span class="line">  datasource:</span><br><span class="line">    url: jdbc:mysql://127.0.01/banchengbang_springboot</span><br><span class="line">    username: root</span><br><span class="line">    password: root</span><br><span class="line">    driver-class-name: com.mysql.jdbc.Driver</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>YAML常用写法<ul>
+<li>YAML支持的数据结构<ul>
+<li>对象(键值对集合)</li>
+<li>数组(按次序排列的值)</li>
+<li>字面量\纯量(单个且不可拆分的值)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>键值对的表示<ul>
+<li><code>key: value</code> (冒号后需要空格)</li>
+<li><code>key:&#123;key: value, key: value, ...&#125;</code></li>
+</ul>
+</li>
+</ul>
+<p>缩进表示层级:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">key: </span><br><span class="line">    child-key: value</span><br><span class="line">    child-key2: value2</span><br></pre></td></tr></table></figure>
+
+<p>较为复杂的对象格式(可用问号加一个空格表示一个复杂的key, 配合一个冒号加一个空格表示一个value)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">?  </span><br><span class="line">    - complexkey1</span><br><span class="line">    - complexkey2</span><br><span class="line">:</span><br><span class="line">    - complexvalue1</span><br><span class="line">    - complexvalue2</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>数组的表示<ul>
+<li><code>-</code> 开头行表示构成一个数组</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- A</span><br><span class="line">- B</span><br><span class="line">- C</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>YAML支持多维数组(可使用行内表示)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">key: [value1, value2, ...]</span><br></pre></td></tr></table></figure></li>
+<li><p>数据结构的子成员为数组(可在该结构下缩进一个空格)</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-</span><br><span class="line"> - A</span><br><span class="line"> - B</span><br><span class="line"> - C</span><br></pre></td></tr></table></figure>
+
+<p><em><strong>综合例子</strong></em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">companies:</span><br><span class="line">    -</span><br><span class="line">        id: 1</span><br><span class="line">        name: company1</span><br><span class="line">        price: 200W</span><br><span class="line">    -</span><br><span class="line">        id: 2</span><br><span class="line">        name: company2</span><br><span class="line">        price: 500W</span><br></pre></td></tr></table></figure>
+
+<p>意为:companies属性是一个数组,每一个数组又有id name price三个属性构成</p>
+<p>上式也可用<code>companies: [&#123;id: 1,name: company1,price: 200W&#125;,&#123;id: 2,name: company2,price: 500W&#125;]</code>表示.</p>
+<ul>
+<li><p>复合结构</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">languages:</span><br><span class="line">  - Ruby</span><br><span class="line">  - Perl</span><br><span class="line">  - Python </span><br><span class="line">websites:</span><br><span class="line">  YAML: yaml.org </span><br><span class="line">  Ruby: ruby-lang.org </span><br><span class="line">  Python: python.org </span><br><span class="line">  Perl: use.perl.org</span><br></pre></td></tr></table></figure>
+<p>转换为json:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123; </span><br><span class="line">  languages: [ &#x27;Ruby&#x27;, &#x27;Perl&#x27;, &#x27;Python&#x27;],</span><br><span class="line">  websites: &#123;</span><br><span class="line">    YAML: &#x27;yaml.org&#x27;,</span><br><span class="line">    Ruby: &#x27;ruby-lang.org&#x27;,</span><br><span class="line">    Python: &#x27;python.org&#x27;,</span><br><span class="line">    Perl: &#x27;use.perl.org&#x27; </span><br><span class="line">  &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>纯量/字面量的表示</p>
+<ul>
+<li>纯量 最基本的 不可拆分的值 有:<ul>
+<li>字符串</li>
+<li>布尔值</li>
+<li>整数</li>
+<li>浮点数</li>
+<li>Null</li>
+<li>时间</li>
+<li>日期</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>例子:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">boolean: </span><br><span class="line">    - TRUE  #true,True都可以</span><br><span class="line">    - FALSE  #false，False都可以</span><br><span class="line">float:</span><br><span class="line">    - 3.14</span><br><span class="line">    - 6.8523015e+5  #可以使用科学计数法</span><br><span class="line">int:</span><br><span class="line">    - 123</span><br><span class="line">    - 0b1010_0111_0100_1010_1110  #二进制表示</span><br><span class="line">null:</span><br><span class="line">    nodeName: &#x27;node&#x27;</span><br><span class="line">    parent: ~  #使用~表示null</span><br><span class="line">string:</span><br><span class="line">    - 哈哈</span><br><span class="line">    - &#x27;Hello world&#x27;  #可以使用双引号或者单引号包裹特殊字符</span><br><span class="line">    - newline</span><br><span class="line">      newline2  #字符串可以拆成多行，每一行之间(?)会被转化成一个空格</span><br><span class="line">date:</span><br><span class="line">    - 2018-02-17  #日期必须使用ISO 8601格式，即yyyy-MM-dd</span><br><span class="line">datetime: </span><br><span class="line">    - 2018-02-17T15:02:31+08:00  #时间使用ISO 8601格式，时间和日期之间使用T连接，最后使用+代表时区</span><br></pre></td></tr></table></figure>
+<p><em><strong>注:字符串的单/双引号:单引号只会显示它里面的字符,不会转义;双引号会将转义字符转换成其要表达的含义显示</strong></em></p>
+<p><strong>例:”\n”换行 ‘\n’显示\n</strong></p>
+<ul>
+<li>引用<ul>
+<li><code>&amp;</code> 锚点</li>
+<li><code>*</code> 别名</li>
+</ul>
+</li>
+</ul>
+<p>例子:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">defaults: &amp;defaults</span><br><span class="line">  adapter:  postgres</span><br><span class="line">  host:     localhost</span><br><span class="line"></span><br><span class="line">development:</span><br><span class="line">  database: myapp_development</span><br><span class="line">  &lt;&lt;: *defaults</span><br><span class="line"></span><br><span class="line">test:</span><br><span class="line">  database: myapp_test</span><br><span class="line">  &lt;&lt;: *defaults</span><br></pre></td></tr></table></figure>
+<p>相当于</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">defaults:</span><br><span class="line">  adapter:  postgres</span><br><span class="line">  host:     localhost</span><br><span class="line"></span><br><span class="line">development:</span><br><span class="line">  database: myapp_development</span><br><span class="line">  adapter:  postgres</span><br><span class="line">  host:     localhost</span><br><span class="line"></span><br><span class="line">test:</span><br><span class="line">  database: myapp_test</span><br><span class="line">  adapter:  postgres</span><br><span class="line">  host:     localhost</span><br></pre></td></tr></table></figure>
+
+<p><code>&amp;</code> 表示建立锚点 <code>&lt;&lt;</code> 表示合并到当前的数据 <code>*</code> 表示引用锚点</p>
+<p>例子2:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- &amp;showell Steve </span><br><span class="line">- Clark </span><br><span class="line">- Brian </span><br><span class="line">- Oren </span><br><span class="line">- *showell </span><br></pre></td></tr></table></figure>
+<p>转化为JavaScript则为:<code>[ &#39;Steve&#39;, &#39;Clark&#39;, &#39;Brian&#39;, &#39;Oren&#39;, &#39;Steve&#39; ]</code></p>
+<ul>
+<li>YAML组织结构<ul>
+<li>一个 YAML 文件可以由一个或多个文档组成，文档之间使用“—”作为分隔符，且个文档相互独立，互不干扰。如果 YAML 文件只包含一个文档，则“—”分隔符可以省略。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">website:</span><br><span class="line">  name: bianchengbang</span><br><span class="line">  url: www.biancheng.net</span><br><span class="line">---</span><br><span class="line">website: &#123;name: bianchengbang,url: www.biancheng.net&#125;</span><br><span class="line">pets:</span><br><span class="line">  -dog</span><br><span class="line">  -cat</span><br><span class="line">  -pig</span><br><span class="line">---</span><br><span class="line">pets: [dog,cat,pig]</span><br><span class="line">name: &quot;zhangsan \n lisi&quot;</span><br><span class="line">---</span><br><span class="line">name: &#x27;zhangsan \n lisi&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>[参考网站]</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/yaml-intro.html">菜鸟</a></li>
+<li><a target="_blank" rel="noopener" href="http://c.biancheng.net/spring_boot/yaml.html">C语言中文网</a></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/12/13/markdown/YAMLStudy/" data-id="ckx4idf53000fwwuw4jzd6rbr" data-title="YAML" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/YAML/" rel="tag">YAML</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/12/13/markdown/ThymeleafStudy/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Thymeleaf</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Log-for-Learn/">Log for Learn</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Configuration/" rel="tag">Configuration</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DataBase/" rel="tag">DataBase</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Exception/" rel="tag">Exception</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Filter/" rel="tag">Filter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Interceptor/" rel="tag">Interceptor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Internationalization/" rel="tag">Internationalization</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Listener/" rel="tag">Listener</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Log/" rel="tag">Log</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Servlet/" rel="tag">Servlet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot-Starter/" rel="tag">SpringBoot Starter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Thymeleaf/" rel="tag">Thymeleaf</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-Static-Source/" rel="tag">Web Static Source</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/YAML/" rel="tag">YAML</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Configuration/" style="font-size: 10px;">Configuration</a> <a href="/tags/DataBase/" style="font-size: 10px;">DataBase</a> <a href="/tags/Exception/" style="font-size: 10px;">Exception</a> <a href="/tags/Filter/" style="font-size: 10px;">Filter</a> <a href="/tags/Interceptor/" style="font-size: 10px;">Interceptor</a> <a href="/tags/Internationalization/" style="font-size: 10px;">Internationalization</a> <a href="/tags/Listener/" style="font-size: 10px;">Listener</a> <a href="/tags/Log/" style="font-size: 10px;">Log</a> <a href="/tags/Servlet/" style="font-size: 10px;">Servlet</a> <a href="/tags/SpringBoot/" style="font-size: 20px;">SpringBoot</a> <a href="/tags/SpringBoot-Starter/" style="font-size: 10px;">SpringBoot Starter</a> <a href="/tags/Thymeleaf/" style="font-size: 10px;">Thymeleaf</a> <a href="/tags/Web-Static-Source/" style="font-size: 10px;">Web Static Source</a> <a href="/tags/YAML/" style="font-size: 10px;">YAML</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/12/13/markdown/YAMLStudy/">YAML</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/13/markdown/ThymeleafStudy/">Thymeleaf</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/13/markdown/SpringBootWebStatic/">SpringBoot Web Static Source</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/13/markdown/SpringBootWebRegistration/">SpringBoot Web Registration</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/13/markdown/SpringBootStarter/">SpringBoot Starter</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

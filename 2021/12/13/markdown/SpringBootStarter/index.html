@@ -4,14 +4,20 @@
   <meta charset="utf-8">
   
   
-  <title>Archives | Hexo</title>
+  <title>SpringBoot Starter | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="##SpringBoot 自定义 starter  命名规范 官方的 starter 命名形式: spring-boot-starter-xxx  第三方自定义的 starter 命名形式: xxx-spring-boot-starter 与 SpringBoot 生态提供的 starter 进行区分   模块规范 (非硬性要求)SpringBoot 建议自定义 starter 时,创建两个 Mo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringBoot Starter">
+<meta property="og:url" content="http://example.com/2021/12/13/markdown/SpringBootStarter/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="##SpringBoot 自定义 starter  命名规范 官方的 starter 命名形式: spring-boot-starter-xxx  第三方自定义的 starter 命名形式: xxx-spring-boot-starter 与 SpringBoot 生态提供的 starter 进行区分   模块规范 (非硬性要求)SpringBoot 建议自定义 starter 时,创建两个 Mo">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-12-13T09:58:44.299Z">
+<meta property="article:modified_time" content="2021-12-13T10:09:06.631Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="SpringBoot">
+<meta property="article:tag" content="SpringBoot Starter">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -69,216 +75,146 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/12/13/markdown/YAMLStudy/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.313Z" itemprop="datePublished">Dec 13</time>
+        <section id="main"><article id="post-markdown/SpringBootStarter" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/12/13/markdown/SpringBootStarter/" class="article-date">
+  <time class="dt-published" datetime="2021-12-13T09:58:44.299Z" itemprop="datePublished">2021-12-13</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/12/13/markdown/YAMLStudy/">YAML</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      SpringBoot Starter
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/12/13/markdown/ThymeleafStudy/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.310Z" itemprop="datePublished">Dec 13</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/12/13/markdown/ThymeleafStudy/">Thymeleaf</a>
-    </h1>
-  
+        <p>##SpringBoot 自定义 starter</p>
+<ol>
+<li>命名规范<ul>
+<li>官方的 starter 命名形式: spring-boot-starter-xxx </li>
+<li>第三方自定义的 starter 命名形式: xxx-spring-boot-starter</li>
+<li>与 SpringBoot 生态提供的 starter 进行区分</li>
+</ul>
+</li>
+<li>模块规范<ul>
+<li>(非硬性要求)SpringBoot 建议自定义 starter 时,创建两个 Module: autoConfigure Module &amp; starter Module <ul>
+<li>其中 starter Module 依赖于 autoConfigure Module</li>
+</ul>
+</li>
+<li>若不需要自动配置代码和依赖项目分离,可组合在同一个 Module 中</li>
+</ul>
+</li>
+<li>自定义 starter<ol>
+<li>创建工程<ol>
+<li>创建 Empty Project (空项目)</li>
+<li>Project Structure -&gt; Modules 添加 New Module (starter + autoconfiguration)</li>
+</ol>
+</li>
+<li>添加 POM 依赖<ul>
+<li>在 starter 的 pom.xml 中 将 autocohnfiguration 作为依赖项</li>
+</ul>
+</li>
+<li>定义 properties 类<ul>
+<li>在autoconfiguration 的 properties 包下创建 Properties 实体类(映射配置信息)<ul>
+<li>@ConfigurationProperties() 绑定配置文件中的配置</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>定义 Service 类<ul>
+<li>在 autoconfiguration 的 service 包下创建 Service 类(供其他项目使用)</li>
+</ul>
+</li>
+<li>定义配置类<ul>
+<li>在 autoconfiguration 的 autoConfiguration 包下创建配置类<ul>
+<li>AutoConfiguration 使用的注解 <ul>
+<li>@Configuration 表示为一个配置类</li>
+<li>@EnableConfigurationProperties(xxxProperties.class) 开启 xxxProperties 的属性配置功能,并将该类以组件的形式注入容器</li>
+<li>@ConditionalOnMissingBean(xxxService.class) 表示容器中没有 xxxService 类时生效</li>
+<li>@Bean 用于将该方法的返回值以 Bean 对象的形式注入到容器中</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>创建 spring.factories 文件<ol>
+<li>在 autoconfiguration 的类路径下 (/resources) 下创建 META-INF 文件夹 ,并在 META-INF 文件夹下创建 spring.factories 文件 (即 /resources/META-INF/spring.factories)</li>
+<li>将 SpringBoot 的 EnableAutoConfiguration 接口与自定义的 starter 自动配置类 xxxAutoConfiguration 组成一组键值对添加到 spring.factories 文件中(方便 SpringBoot 启动时,获取自定义 starter 自动配置)<blockquote>
+<p>Spring Factories 机制是 Spring Boot 中的一种服务发现机制，这种机制与 Java SPI 机制十分相似。Spring Boot 会自动扫描所有 Jar 包类路径下 META-INF/spring.factories 文件，并读取其中的内容，进行实例化，这种机制也是 Spring Boot Starter 的基础。</p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>构建 starter<ol>
+<li>构建 autoConfigure Module<ul>
+<li>在 autoconfiguration 的 pom.xml 中执行 <code>mvn clean install</code> 进行构建</li>
+</ul>
+</li>
+<li>构造 starter Module <ul>
+<li>构建完 autoconfigure Module 后才可构建 starter Module(starter Module 构建完后 其他SpringBoot项目便可以应用该自定义的 starter )<ul>
+<li>在 starter 的 pom.xml 中执行 <code>mvn clean install</code> 命令进行构建<blockquote>
+<p>引用自定义 starter 的项目不在本地时, 使用 <code>mvn clean deploy</code> 命令将自定义的 starter 部署到 远程仓库</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/12/13/markdown/SpringBootWebStatic/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.306Z" itemprop="datePublished">Dec 13</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/12/13/markdown/SpringBootWebStatic/">SpringBoot Web Static Source</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/12/13/markdown/SpringBootWebRegistration/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.302Z" itemprop="datePublished">Dec 13</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/12/13/markdown/SpringBootStarter/" data-id="ckx4idf4w000bwwuw8g9chlms" data-title="SpringBoot Starter" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/12/13/markdown/SpringBootWebRegistration/">SpringBoot Web Registration</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/12/13/markdown/SpringBootStarter/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.299Z" itemprop="datePublished">Dec 13</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/12/13/markdown/SpringBootStarter/">SpringBoot Starter</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/12/13/markdown/SpringBootLog/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.295Z" itemprop="datePublished">Dec 13</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/12/13/markdown/SpringBootLog/">SpringBoot Log</a>
-    </h1>
-  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot-Starter/" rel="tag">SpringBoot Starter</a></li></ul>
 
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/12/13/markdown/SpringBootWebRegistration/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          SpringBoot Web Registration
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/12/13/markdown/SpringBootLog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">SpringBoot Log</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/12/13/markdown/SpringBootInternationalization/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.292Z" itemprop="datePublished">Dec 13</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/12/13/markdown/SpringBootInternationalization/">SpringBoot Internationalization</a>
-    </h1>
-  
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/12/13/markdown/SpringBootInterceptor/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.288Z" itemprop="datePublished">Dec 13</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/12/13/markdown/SpringBootInterceptor/">SpringBoot Interceptor</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/12/13/markdown/SpringBootException/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.284Z" itemprop="datePublished">Dec 13</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/12/13/markdown/SpringBootException/">SpringBoot Exception</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/12/13/markdown/SpringBootDataBase/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.280Z" itemprop="datePublished">Dec 13</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/12/13/markdown/SpringBootDataBase/">SpringBoot DataBase</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-  </nav>
 
 </section>
         

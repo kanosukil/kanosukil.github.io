@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>SpringBoot Web Static Source | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="spring-boot-starter-web (Web启动器)  Spring MVC 为 Spring 提供的基于MVC设计模式的轻量级 Web 开发框架, 其本身就是 Spring 框架的一部分,可与 Spring 框架无缝集成,性能优越 Spring Boot 为 Spring 基础上创建的一款开源框架, 其提供了 spring-boot-starter-web (Web场景启动器) 来为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringBoot Web Static Source">
+<meta property="og:url" content="http://example.com/2021/12/13/markdown/SpringBootWebStatic/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="spring-boot-starter-web (Web启动器)  Spring MVC 为 Spring 提供的基于MVC设计模式的轻量级 Web 开发框架, 其本身就是 Spring 框架的一部分,可与 Spring 框架无缝集成,性能优越 Spring Boot 为 Spring 基础上创建的一款开源框架, 其提供了 spring-boot-starter-web (Web场景启动器) 来为">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-12-13T09:58:44.306Z">
+<meta property="article:modified_time" content="2021-12-13T10:10:49.483Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="SpringBoot">
+<meta property="article:tag" content="Web Static Source">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-markdown/SpringBootWebStatic" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/12/13/markdown/SpringBootWebStatic/" class="article-date">
+  <time class="dt-published" datetime="2021-12-13T09:58:44.306Z" itemprop="datePublished">2021-12-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      SpringBoot Web Static Source
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="spring-boot-starter-web-Web启动器"><a href="#spring-boot-starter-web-Web启动器" class="headerlink" title="spring-boot-starter-web (Web启动器)"></a>spring-boot-starter-web (Web启动器)</h2><blockquote>
+<ul>
+<li>Spring MVC 为 Spring 提供的基于MVC设计模式的轻量级 Web 开发框架, 其本身就是 Spring 框架的一部分,可与 Spring 框架无缝集成,性能优越</li>
+<li>Spring Boot 为 Spring 基础上创建的一款开源框架, 其提供了 spring-boot-starter-web (Web场景启动器) 来为 Web 开发给予支持. spring-boot-starter-web 为我们提供了嵌入的 Servlet 容器以及 SpringMVC 的依赖, 并为 Spring MVC 提供了大量自动配置, 可以适用于大多数 Web 开发场景.</li>
+</ul>
+</blockquote>
+<h3 id="SpringBootWeb-快速开发"><a href="#SpringBootWeb-快速开发" class="headerlink" title="SpringBootWeb 快速开发"></a>SpringBootWeb 快速开发</h3><p>SpringBoot 为 SpringMVC 提供了自动配置, 并在 SpringMVC 默认功能的基础上提供了以下特性:</p>
+<ol>
+<li>引入 ContentNegotiatingViewResolver 和 BeanNameViewResolver (视图解析器)</li>
+<li>对包括 WebJars 在内的静态资源提供支持</li>
+<li>自动注册 Converter GenericConverter Formatter (转换器和格式化器)</li>
+<li>对 HttpMessageConverters 的支持 (Spring MVC中用于转换 HTTP 请求和响应的消息转换器)</li>
+<li>自动注册 MessageCodesResolver (用于定义错误代码生成规则)</li>
+<li>支持对静态首页 (index.html) 的访问</li>
+<li>自动使用 ConfigurableWebBindingInitializer</li>
+</ol>
+<p>只需要在 SpringBoot 项目的 pom.xml 中引入 spring-boot-starter-web ,即使不进行配置,也可直接使用 SpringMVC 进行 Web 开发.</p>
+<blockquote>
+<p>spring-boot-starter-web 默认引入核心启动器 spring-boot-start, 因此当 SpringBoot 项目中的 pom.xml 引入 spring-boot-starter-web 依赖后,就不用再引入 spring-boot-starter 核心启动器的依赖了.</p>
+</blockquote>
+<hr>
+<p>##Spring Boot 静态资源映射<br>Web应用中涉及大量静态资源(JS CSS HTML等)</p>
+<blockquote>
+<ul>
+<li>SpringMVC 导入静态资源文件时,需要配置静态资源的映射</li>
+<li>SpringBoot 已经默认完成了该工作</li>
+</ul>
+</blockquote>
+<p>SpringBoot提供的3种默认静态资源映射规则</p>
+<ul>
+<li>WebJars 映射</li>
+<li>默认资源映射</li>
+<li>静态首页(欢迎页)映射</li>
+</ul>
+<hr>
+<ul>
+<li><em><strong>WebJars 映射</strong></em><ul>
+<li>以Jar形式为Web项目提供资源文件<ul>
+<li>WebJars 可以将 Web 前端资源(JS CSS等)打成一个个 Jar 包, 然后把 Jar 包部署在 Maven 中央仓库中进行统一管理, 当Spring Boot 项目中需要引入 Web 前端资源时, 只要访问 <a target="_blank" rel="noopener" href="https://www.webjars.org/">WebJars官网</a> 找到所需资源的 pom 依赖,再将其导入到项目中即可.</li>
+<li>所有通过WebJars引入的前端资源都存放在当前项目的类路径(classpath)下的<code>/META-INF/resources/webjars/</code>目录中.</li>
+<li>SpringBoot 通过 MVC 的自动配置类 WebMvcAutoConfiguration 为 WebJars 前端资源提供默认映射规则 <a href="../MethodsTXT/WebMvcAutoConfiguration.txt">部分源码</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>默认静态资源映射</strong></em><ul>
+<li>访问项目中的任意资源时,SpringBoot 会默认从以下路径查找资源文件(优先级依次降低):<ol>
+<li>classpath:/META-INF/resources/</li>
+<li>classpath:/resources/</li>
+<li>classpath:/static/</li>
+<li>classpath:/public/</li>
+</ol>
+<ul>
+<li>以上称为静态文件夹</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>静态首页(欢迎页)映射</strong></em><ul>
+<li>静态资源文件夹下的所有index.html被称为静态首页或欢迎页,会被 /** 映射</li>
+<li>访问 ‘/‘ 或 ‘/index.html’ 时,将跳转到静态首页(欢迎页)<blockquote>
+<p>注: 同样由查找顺序优先级</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>##SpringBoot 定制 SpringMVC<br>SpringBoot抛弃了传统的xml配置文件,通过配置类(标识@Configuration的类)以JavaBean的形式进行相关配置</p>
+<blockquote>
+<p>SpringBoot对SpringMVC的自动配置可以满足大部分需求,但也可以通过自定义配置类并实现WebMvcConfiguration接口定制SpringMVC配置(拦截器、格式化程序、视图控制器等)</p>
+<blockquote>
+<ul>
+<li>SpringBoot1.5及之前通过继承WebMvcConfigurationAdapter抽象类定制SpringMVC</li>
+<li>SpringBoot2.0后改为实现WebMvcConfigurer接口定制SpringMVC</li>
+</ul>
+</blockquote>
+</blockquote>
+<ul>
+<li>WebMvcConfigurer<ul>
+<li>基于 Java8 的接口</li>
+<li>其中大部分方法为 default 类型(且都为空实现)</li>
+</ul>
+</li>
+</ul>
+<table>
+  <tbody>
+    <tr>
+      <th>方法</th>
+      <th>说明</th>
+    </tr>
+    <tr>
+      <td>default void configurePathMatch(PathMatchConfigurer configurer) {}</td>
+      <td>HandlerMappings 路径的匹配规则。</td>
+    </tr>
+    <tr>
+      <td>default void configureContentNegotiation(ContentNegotiationConfigurer configurer) {}</td>
+      <td>内容协商策略（一个请求路径返回多种数据格式）。</td>
+    </tr>
+    <tr>
+      <td>default void configureAsyncSupport(AsyncSupportConfigurer configurer) {}</td>
+      <td>处理异步请求。</td>
+    </tr>
+    <tr>
+      <td>default void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {}</td>
+      <td>这个接口可以实现静态文件可以像 Servlet 一样被访问。</td>
+    </tr>
+    <tr>
+      <td>default void addFormatters(FormatterRegistry registry) {}</td>
+      <td>添加格式化器或者转化器。</td>
+    </tr>
+    <tr>
+      <td><span style="color:#b22222;">default void addInterceptors(InterceptorRegistry registry) {}</span></td>
+      <td><span style="color:#b22222;">添加 Spring MVC 生命周期拦截器，对请求进行拦截处理。</span></td>
+    </tr>
+    <tr>
+      <td><span style="color:#b22222;">default void addResourceHandlers(ResourceHandlerRegistry registry) {}</span></td>
+      <td><span style="color:#b22222;">添加或修改静态资源（例如图片，js，css 等）映射；<br />
+      Spring Boot 默认设置的静态资源文件夹就是通过重写该方法设置的</span>。</td>
+    </tr>
+    <tr>
+      <td>default void addCorsMappings(CorsRegistry registry) {}</td>
+      <td>处理跨域请求。</td>
+    </tr>
+    <tr>
+      <td><span style="color:#b22222;">default void addViewControllers(ViewControllerRegistry registry) {}</span></td>
+      <td><span style="color:#b22222;">主要用于实现无业务逻辑跳转，例如主页跳转，简单的请求重定向，错误页跳转等</span></td>
+    </tr>
+    <tr>
+      <td>default void configureViewResolvers(ViewResolverRegistry registry) {}</td>
+      <td>配置视图解析器，将 Controller 返回的字符串（视图名称），转换为具体的视图进行渲染。</td>
+    </tr>
+    <tr>
+      <td>default void addArgumentResolvers(List&lt;HandlerMethodArgumentResolver&gt; resolvers) {}</td>
+      <td>添加解析器以支持自定义控制器方法参数类型<br/>实现该方法不会覆盖用于解析处理程序方法参数的内置支持；<br/>
+      要自定义内置的参数解析支持， 同样可以通过 RequestMappingHandlerAdapter 直接配置 RequestMappingHandlerAdapter 。</td>
+    </tr>
+    <tr>
+      <td>default void addReturnValueHandlers(List&lt;HandlerMethodReturnValueHandler&gt; handlers) {}</td>
+      <td>添加处理程序来支持自定义控制器方法返回值类型<br/>使用此选项不会覆盖处理返回值的内置支持；<br />
+      要自定义处理返回值的内置支持，请直接配置 RequestMappingHandlerAdapter。</td>
+    </tr>
+    <tr>
+      <td>default void configureMessageConverters(List&lt;HttpMessageConverter&lt;?&gt;&gt; converters) {}</td>
+      <td>用于配置默认的消息转换器（转换 HTTP 请求和响应）。</td>
+    </tr>
+    <tr>
+      <td>default void extendMessageConverters(List&lt;HttpMessageConverter&lt;?&gt;&gt; converters) {}</td>
+      <td>直接添加消息转换器，会关闭默认的消息转换器列表；<br />
+      <strong>实现该方法即可在不关闭默认转换器的起提下，新增一个自定义转换器。</strong></td>
+    </tr>
+    <tr>
+      <td>default void configureHandlerExceptionResolvers(List&lt;HandlerExceptionResolver&gt; resolvers) {}</td>
+      <td>配置异常解析器。</td>
+    </tr>
+    <tr>
+      <td>default void extendHandlerExceptionResolvers(List&lt;HandlerExceptionResolver&gt; resolvers) {}</td>
+      <td>扩展或修改默认的异常解析器列表。</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+<li><p>SpringBoot中，定制SpringMVC的两种形式：</p>
+<ul>
+<li>拓展 SpringMVC</li>
+<li>全面接管 SpringMVC</li>
+</ul>
+</li>
+<li><p><em><strong>拓展 SpringMVC</strong></em></p>
+</li>
+</ul>
+<p>SpringBoot的自动配置不能满足需求时，自定义一个 <code>WebMvcConfigurer 类型(实现了 WebMvcCongfigurer 接口)的配置类(标注了 @Configuration 但没标注 @EnableWebMvc 注解)</code> 来拓展 SpringMVC. 不仅能保留SpringBoot对SpringMVC的自动配置,也额外增加自定义的SpringMVC配置</p>
+<blockquote>
+<p>controller 是使用 @Controller 注解还是 @RestController:</p>
+<ul>
+<li>@Controller 用于返回静态页面</li>
+<li>@RestController 用于返回 json 数据<br>详例见 <a href="../src/main/java/com/learnboot/springbootlearn/controller/IndexController.java">IndexController.java</a></li>
+</ul>
+</blockquote>
+<ul>
+<li><em><strong>全面接管 SpringMVC</strong></em></li>
+</ul>
+<p>需要抛弃 SpringBoot 对 SpringMVC 的全部自动配置时,完全接管 SpringMVC,就需要自定义一个 WebMvcConfiguration 类型(实现 WebMvcConfiguration 接口的配置类),并标注 @EnableWebMvc 注解,来完全接管 SpringMVC</p>
+<blockquote>
+<p>完全接管 SpringMVC 后, SpringBoot 对 SpringMVC 的自动配置 全部失效</p>
+</blockquote>
+<hr>
+<hr>
+<p>##SpringBoot 整合 Thymeleaf<br><a href="ThymeleafStudy.md">Thymeleaf学习</a></p>
+<p>SpringBoot 推荐使用 Thymeleaf 作为模板引擎. SpringBoot 为 Thymeleaf 提供一系列默认配置, SpringBoot 项目一旦导入 Thymeleaf 依赖,相应的自动配置就会自动生效(ThymeleafAutoConfiguration 或 FreeMarkerAutoConfiguration)</p>
+<ul>
+<li>Spring 整合 Thymeleaf 模板引擎, 步骤<ol>
+<li>引入 Starter 依赖</li>
+<li>创建模板文件,并放在指定目录下</li>
+</ol>
+</li>
+<li>引入依赖<ul>
+<li>pom.xml 中添加 Thymeleaf 的 Starter 依赖<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--Thymeleaf 启动器--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-thymeleaf<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>创建模板文件<ul>
+<li>ThymeleafAutoConfiguration 自动配置类的部分注解<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration(proxyBeanMethods=false)</span></span><br><span class="line"><span class="meta">@EnableConfigurationProperties(&#123;ThymeleafProperties.class&#125;)</span></span><br><span class="line"><span class="meta">@ConditionalOnClass(&#123;ThymeleafMode.class, SpringTemplateEngine.class&#125;)</span></span><br><span class="line"><span class="meta">@AutoConfigurationAfter(&#123;WebMvcAutoConfiguration.class, WebFluxAutoConfiguration.class&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThymeleafAutoConfiguration</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>ThymeleafAutoConfiguration 使用了 @EnableConfigurationProperties 注解导入 ThymeleafProperties 类, 该类的部分源码:<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ConfigurationProperties(prefix = &quot;spring.thymeleaf&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThymeleafProperties</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Charset DEFAULT_ENCODING;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String DEFAULT_PREFIX = <span class="string">&quot;classpath:/templates/&quot;</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String DEFAULT_SUFFIX = <span class="string">&quot;.html&quot;</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">boolean</span> checkTemplate = <span class="keyword">true</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">boolean</span> checkTemplateLocation = <span class="keyword">true</span>;</span><br><span class="line">    <span class="keyword">private</span> String prefix = <span class="string">&quot;classpath:/templates/&quot;</span>;</span><br><span class="line">    <span class="keyword">private</span> String suffix = <span class="string">&quot;.html&quot;</span>;</span><br><span class="line">    <span class="keyword">private</span> String mode = <span class="string">&quot;HTML&quot;</span>;</span><br><span class="line">    <span class="keyword">private</span> Charset encoding;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">boolean</span> cache;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>ThymeleafProperties 通过 @ConfigurationProperties 注解将配置文件(application.properties/yml)中前缀为 spring.thymeleaf 的配置和这个类的属性绑定</li>
+<li>在 ThymeleafProperties 中还提供了以下静态变量：<ol>
+<li>DEFAULT_ENCODING:默认编码格式</li>
+<li>DEFAULT_PREFIX:视图解析器的前缀</li>
+<li>DEFAULT_SUFFIX:视图解析器的后缀</li>
+</ol>
+</li>
+<li>Thymeleaf 模板的默认位置在 resources/templates 目录下，默认的后缀是 html，即只要将 HTML 页面放在“classpath:/templates/”下，Thymeleaf 就能自动进行渲染。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/12/13/markdown/SpringBootWebStatic/" data-id="ckx4idf51000dwwuw7mxs8fp1" data-title="SpringBoot Web Static Source" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web-Static-Source/" rel="tag">Web Static Source</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/12/13/markdown/ThymeleafStudy/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Thymeleaf
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/12/13/markdown/SpringBootWebRegistration/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">SpringBoot Web Registration</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Log-for-Learn/">Log for Learn</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Configuration/" rel="tag">Configuration</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DataBase/" rel="tag">DataBase</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Exception/" rel="tag">Exception</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Filter/" rel="tag">Filter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Interceptor/" rel="tag">Interceptor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Internationalization/" rel="tag">Internationalization</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Listener/" rel="tag">Listener</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Log/" rel="tag">Log</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Servlet/" rel="tag">Servlet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot-Starter/" rel="tag">SpringBoot Starter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Thymeleaf/" rel="tag">Thymeleaf</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-Static-Source/" rel="tag">Web Static Source</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/YAML/" rel="tag">YAML</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Configuration/" style="font-size: 10px;">Configuration</a> <a href="/tags/DataBase/" style="font-size: 10px;">DataBase</a> <a href="/tags/Exception/" style="font-size: 10px;">Exception</a> <a href="/tags/Filter/" style="font-size: 10px;">Filter</a> <a href="/tags/Interceptor/" style="font-size: 10px;">Interceptor</a> <a href="/tags/Internationalization/" style="font-size: 10px;">Internationalization</a> <a href="/tags/Listener/" style="font-size: 10px;">Listener</a> <a href="/tags/Log/" style="font-size: 10px;">Log</a> <a href="/tags/Servlet/" style="font-size: 10px;">Servlet</a> <a href="/tags/SpringBoot/" style="font-size: 20px;">SpringBoot</a> <a href="/tags/SpringBoot-Starter/" style="font-size: 10px;">SpringBoot Starter</a> <a href="/tags/Thymeleaf/" style="font-size: 10px;">Thymeleaf</a> <a href="/tags/Web-Static-Source/" style="font-size: 10px;">Web Static Source</a> <a href="/tags/YAML/" style="font-size: 10px;">YAML</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/12/13/markdown/YAMLStudy/">YAML</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/13/markdown/ThymeleafStudy/">Thymeleaf</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/13/markdown/SpringBootWebStatic/">SpringBoot Web Static Source</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/13/markdown/SpringBootWebRegistration/">SpringBoot Web Registration</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/13/markdown/SpringBootStarter/">SpringBoot Starter</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
