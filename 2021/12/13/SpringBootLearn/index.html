@@ -6,15 +6,15 @@
   
   <title>SpringBootLearn | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="#学习SpringBoot  注 :端口被占用  cmd 指令:  netstat -aon|findstr 端口号  taskkill -f -pid 占用端口的pid  bean 的属性名最好为全小写  !!!注!!!: 注入Bean时不能使用 驼峰命名 mybatis 需要关闭驼峰命名法 (解决方法 未知)  ###项目结构 &#x2F;src&#x2F;main&#x2F;java:程序入口 &#x2F;src&#x2F;main&#x2F;res">
+  <meta name="description" content="学习SpringBoot 注 :端口被占用  cmd 指令:  netstat -aon|findstr 端口号  taskkill -f -pid 占用端口的pid  bean 的属性名最好为全小写  !!!注!!!: 注入Bean时不能使用 驼峰命名 mybatis 需要关闭驼峰命名法 (解决方法 未知)  项目结构&#x2F;src&#x2F;main&#x2F;java:程序入口 &#x2F;src&#x2F;main&#x2F;resources">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SpringBootLearn">
 <meta property="og:url" content="http://example.com/2021/12/13/SpringBootLearn/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="#学习SpringBoot  注 :端口被占用  cmd 指令:  netstat -aon|findstr 端口号  taskkill -f -pid 占用端口的pid  bean 的属性名最好为全小写  !!!注!!!: 注入Bean时不能使用 驼峰命名 mybatis 需要关闭驼峰命名法 (解决方法 未知)  ###项目结构 &#x2F;src&#x2F;main&#x2F;java:程序入口 &#x2F;src&#x2F;main&#x2F;res">
+<meta property="og:description" content="学习SpringBoot 注 :端口被占用  cmd 指令:  netstat -aon|findstr 端口号  taskkill -f -pid 占用端口的pid  bean 的属性名最好为全小写  !!!注!!!: 注入Bean时不能使用 驼峰命名 mybatis 需要关闭驼峰命名法 (解决方法 未知)  项目结构&#x2F;src&#x2F;main&#x2F;java:程序入口 &#x2F;src&#x2F;main&#x2F;resources">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-12-13T09:56:33.000Z">
-<meta property="article:modified_time" content="2021-12-13T09:58:59.636Z">
+<meta property="article:modified_time" content="2021-12-13T14:57:37.466Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="SpringBoot">
 <meta name="twitter:card" content="summary">
@@ -100,8 +100,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>#学习SpringBoot</p>
-<blockquote>
+        <h1 id="学习SpringBoot"><a href="#学习SpringBoot" class="headerlink" title="学习SpringBoot"></a>学习SpringBoot</h1><blockquote>
 <p><em><strong>注</strong></em> :端口被占用  cmd 指令:</p>
 <blockquote>
 <p><code>netstat -aon|findstr 端口号</code> </p>
@@ -111,12 +110,10 @@
 </blockquote>
 <p>!!!注!!!: 注入Bean时不能使用 驼峰命名 mybatis 需要关闭驼峰命名法 (解决方法 <strong>未知</strong>)</p>
 <hr>
-<p>###项目结构</p>
-<p><code>/src/main/java</code>:程序入口</p>
+<h3 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h3><p><code>/src/main/java</code>:程序入口</p>
 <p><code>/src/main/resources</code>:配置文件入口</p>
 <p><code>/src/test</code>:测试入口</p>
-<p>###引入Web模块</p>
-<p>在<code>pom.xml</code>(Maven配置文件)中引入依赖模块:</p>
+<h3 id="引入Web模块"><a href="#引入Web模块" class="headerlink" title="引入Web模块"></a>引入Web模块</h3><p>在<code>pom.xml</code>(Maven配置文件)中引入依赖模块:</p>
 <p><code>spring-boot-starter</code> :核心,包括自动配置支持、日志和yaml</p>
 <p><code>spring-boot-starter-test</code>:测试,包括JUnit、Hamcrest、Mockito</p>
 <p><code>spring-boot-starter-web</code>:web模块</p>
@@ -125,8 +122,7 @@
 <p><em><strong>注</strong></em>:@SpringApplicationConfiguration注解已失效,应替换成@SpringBootTest</p>
 </blockquote>
 <hr>
-<p>##SpringBoot Starter</p>
-<p><strong>Starter(启动器)</strong> 整合了应用研发的场景下可能用到的各种依赖, 程序员只需要 <strong>在Maven中引入Starter依赖</strong> ,SpringBoot就可自动扫描到要加载的信息并启动相应默认配置. Starter提供了大量自动配置,且所有Starter都遵循约定成俗的默认配置,并允许调整配置 (<strong>约定大于配置</strong>)</p>
+<h2 id="SpringBoot-Starter"><a href="#SpringBoot-Starter" class="headerlink" title="SpringBoot Starter"></a>SpringBoot Starter</h2><p><strong>Starter(启动器)</strong> 整合了应用研发的场景下可能用到的各种依赖, 程序员只需要 <strong>在Maven中引入Starter依赖</strong> ,SpringBoot就可自动扫描到要加载的信息并启动相应默认配置. Starter提供了大量自动配置,且所有Starter都遵循约定成俗的默认配置,并允许调整配置 (<strong>约定大于配置</strong>)</p>
 <blockquote>
 <p><strong>注</strong>: 并非所有Starter都由SpringBoot官方提供,有部分Starter由第三方技术厂商提供[e.g.<em>druid-spring-boot-starter</em> <em>mybatis-spring-boot-starter</em>] 也有些SpringBoot官方没提供Starter,第三方厂商也没提供Starter的技术</p>
 </blockquote>
@@ -168,7 +164,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/12/13/SpringBootLearn/" data-id="ckx4idf4b0000wwuw9j63cmdc" data-title="SpringBootLearn" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/12/13/SpringBootLearn/" data-id="ckx5o29za0001x4uw4rc3b8mc" data-title="SpringBootLearn" class="article-share-link">Share</a>
       
       
       

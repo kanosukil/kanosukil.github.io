@@ -14,7 +14,7 @@
 <meta property="og:description" content="SpringBoot 访问 JDBC 数据库 导入JDBC场景启动器(starter) 引入依赖1234&lt;dependency&gt;    &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;    &lt;artifactId&gt;spring-boot-starter-data-jdbc&lt;&#x2F;artifactId&gt;&amp;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-12-13T09:58:44.280Z">
-<meta property="article:modified_time" content="2021-12-13T10:07:51.413Z">
+<meta property="article:modified_time" content="2021-12-13T14:58:56.624Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="SpringBoot">
 <meta property="article:tag" content="DataBase">
@@ -189,8 +189,7 @@
 </li>
 </ul>
 <hr>
-<p>###Spring Boot整合Druid数据源</p>
-<ul>
+<h3 id="Spring-Boot整合Druid数据源"><a href="#Spring-Boot整合Druid数据源" class="headerlink" title="Spring Boot整合Druid数据源"></a>Spring Boot整合Druid数据源</h3><ul>
 <li><p>Druid 是阿里巴巴推出的一款开源的高性能数据源产品，Druid 支持所有 JDBC 兼容的数据库，包括 Oracle、MySQL、SQL Server 和 H2 等等。Druid 不仅结合了 C3P0、DBCP 和 PROXOOL 等数据源产品的优点，同时还加入了强大的监控功能。通过 Druid 的监控功能，可以实时观察数据库连接池和 SQL 的运行情况，帮助用户及时排查出系统中存在的问题。</p>
 </li>
 <li><p>Druid 非 Springboot 提供的技术, 其属于第三方,需要通过一定方法整合:</p>
@@ -312,13 +311,14 @@
 <li><a href="../src/main/resources/application.yml">application.yml</a><blockquote>
 <ul>
 <li>在配置 Druid 内置 Filter 时，需要先将对应 Filter 的 enabled 设置为 true，否则内置 Filter 的配置不会生效</li>
-<li>以上所有内容都只是示例配置，Druid Spring Boot Starter 并不是只支持以上属性，它支持 DruidDataSource 内所有具有 setter 方法的属性。 </li>
+<li>以上所有内容都只是示例配置，Druid Spring Boot Starter 并不是只支持以上属性，它支持 DruidDataSource 内所有具有 setter 方法的属性。</li>
 </ul>
 </blockquote>
-<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><a target="_blank" rel="noopener" href="https://github.com/alibaba/druid/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">官方链接</a> 最重要</li>
+</li>
 </ul>
 </li>
 </ul>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p> <a target="_blank" rel="noopener" href="https://github.com/alibaba/druid/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">官方链接</a> 最重要</p>
 <hr>
 <h2 id="MyBatis-整合"><a href="#MyBatis-整合" class="headerlink" title="MyBatis 整合"></a>MyBatis 整合</h2><p>MyBatis 开发了一套基于 Spring Boot 模式的 starter：<code>mybatis-spring-boot-starter</code></p>
 <ul>
@@ -350,10 +350,11 @@
 </li>
 <li>创建 Mapper 映射文件<ul>
 <li>在配置文件 application.properties/yml 通过 mybatis.mapper-locations 指定的位置中创建 <a href="../src/main/resources/mybatis/mapper/UserMapper.xml">UserMapper.xml</a></li>
-<li>示例 <a href="../src/main/resources/application.properties">application.properties</a> <a href="../src/main/resources/mybatis/mapper/UserMapper.xml">mapper.xml</a> <a href="../src/main/java/com/learnboot/springbootlearn/entities/User.java">Entities</a> <a href="../src/main/java/com/learnboot/springbootlearn/mapper/UserMapper.java">mapperInterface</a> <a href="../src/main/java/com/learnboot/springbootlearn/service/UserService.java">service</a> <a href="../src/main/java/com/learnboot/springbootlearn/service/Impl/UserServiceImpl.java">serviceImpl</a><h3 id="注解改写-mapper-xml"><a href="#注解改写-mapper-xml" class="headerlink" title="注解改写 mapper.xml"></a>注解改写 mapper.xml</h3>MyBatis 针对实际实际业务中使用最多的“增伤改查”操作,提供注解替换 mapper 映射文件:</li>
+<li>示例 <a href="../src/main/resources/application.properties">application.properties</a> <a href="../src/main/resources/mybatis/mapper/UserMapper.xml">mapper.xml</a> <a href="../src/main/java/com/learnboot/springbootlearn/entities/User.java">Entities</a> <a href="../src/main/java/com/learnboot/springbootlearn/mapper/UserMapper.java">mapperInterface</a> <a href="../src/main/java/com/learnboot/springbootlearn/service/UserService.java">service</a> <a href="../src/main/java/com/learnboot/springbootlearn/service/Impl/UserServiceImpl.java">serviceImpl</a></li>
 </ul>
 </li>
 </ul>
+<h3 id="注解改写-mapper-xml"><a href="#注解改写-mapper-xml" class="headerlink" title="注解改写 mapper.xml"></a>注解改写 mapper.xml</h3><p>MyBatis 针对实际实际业务中使用最多的“增伤改查”操作,提供注解替换 mapper 映射文件:</p>
 <ol>
 <li>@Select</li>
 <li>@Insert</li>
@@ -370,11 +371,13 @@
 </ul>
 </li>
 </ul>
+<hr>
+<hr>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/12/13/markdown/SpringBootDataBase/" data-id="ckx4idf4h0001wwuw6dyfcpmy" data-title="SpringBoot DataBase" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/12/13/markdown/SpringBootDataBase/" data-id="ckx5o29zj0005x4uw4pgdflc5" data-title="SpringBoot DataBase" class="article-share-link">Share</a>
       
       
       
