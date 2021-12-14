@@ -1,107 +1,293 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hans">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Learning Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="VHBin" />
+
+
+    
+    
+
+
+<meta property="og:type" content="website">
 <meta property="og:title" content="Learning Blog">
 <meta property="og:url" content="https://example.com/index.html">
 <meta property="og:site_name" content="Learning Blog">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale">
 <meta property="article:author" content="VHBin">
 <meta property="article:tag" content="learn">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Learning Blog" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
 
-  
-  
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+
+
+    <link rel="shortcut icon" href="/img/niconico.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+
 <link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-  
+
+    <style> .article { opacity: 0;} </style>
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>Learning Blog</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: true,
+        isPost: false,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: 
+    }
+</script>
+
+
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
 <meta name="generator" content="Hexo 5.4.0"></head>
-
 <body>
   <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Learning Blog</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">NewBie</a>
-        </h2>
-      
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/"></a></h1>
+        </hgroup>
+
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/index.html">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa GitHub" target="_blank" rel="noopener" href="https://github.com/kanosukil" title="GitHub"></a>
+                            
+                                <a class="fa bilibili" target="_blank" rel="noopener" href="https://space.bilibili.com/34467149" title="bilibili"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Configuration/" rel="tag">Configuration</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DataBase/" rel="tag">DataBase</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Exception/" rel="tag">Exception</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Filter/" rel="tag">Filter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Interceptor/" rel="tag">Interceptor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Internationalization/" rel="tag">Internationalization</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Listener/" rel="tag">Listener</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Log/" rel="tag">Log</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Servlet/" rel="tag">Servlet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot-Starter/" rel="tag">SpringBoot Starter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Thymeleaf/" rel="tag">Thymeleaf</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-Static-Source/" rel="tag">Web Static Source</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/YAML/" rel="tag">YAML</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" target="_blank" rel="noopener" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" target="_blank" rel="noopener" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">true</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://example.com"></form>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页"></a></h1>
       </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页"></a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/index.html">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/kanosukil" title="GitHub"></a>
+                            
+                                <a class="fa bilibili" target="_blank" href="https://space.bilibili.com/34467149" title="bilibili"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
     </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap">
   
-    <article id="post-markdown/YAMLStudy" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/12/13/markdown/YAMLStudy/" class="article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.313Z" itemprop="datePublished">2021-12-13</time>
+    <article id="post-markdown/YAMLStudy" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/12/13/markdown/YAMLStudy/" class="article-date">
+      <time datetime="2021-12-13T09:58:44.313Z" itemprop="datePublished">2021-12-13</time>
 </a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
-  </div>
 
-  </div>
+
+    </div>
+  
   <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/12/13/markdown/YAMLStudy/">YAML</a>
+      <a class="article-title" href="/2021/12/13/markdown/YAMLStudy/">YAML</a>
     </h1>
   
 
       </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
         <h1 id="YAML语言"><a href="#YAML语言" class="headerlink" title="YAML语言"></a><em><strong>YAML语言</strong></em></h1><p>YAML Ain`t Markup Language 以数据为中心的标记语言(文件一般以.yml .yaml结尾)</p>
 <ul>
 <li><p>使用条件</p>
@@ -222,47 +408,66 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://example.com/2021/12/13/markdown/YAMLStudy/" data-id="ckx5qmb9j001op4uwb95ygw50" data-title="YAML" class="article-share-link">Share</a>
+    
+    <div class="article-info article-info-index">
       
       
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/YAML/" rel="tag">YAML</a></li></ul>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
+    </div>
 
-    </footer>
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/YAML/" rel="tag">YAML</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
   
 </article>
 
 
 
-  
-    <article id="post-markdown/ThymeleafStudy" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/12/13/markdown/ThymeleafStudy/" class="article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.310Z" itemprop="datePublished">2021-12-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
-  </div>
 
-  </div>
+
+
+
+
+
+  
+    <article id="post-markdown/ThymeleafStudy" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/12/13/markdown/ThymeleafStudy/" class="article-date">
+      <time datetime="2021-12-13T09:58:44.310Z" itemprop="datePublished">2021-12-13</time>
+</a>
+
+
+    </div>
+  
   <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/12/13/markdown/ThymeleafStudy/">Thymeleaf</a>
+      <a class="article-title" href="/2021/12/13/markdown/ThymeleafStudy/">Thymeleaf</a>
     </h1>
   
 
       </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
         <h2 id="Thymeleaf"><a href="#Thymeleaf" class="headerlink" title="Thymeleaf"></a>Thymeleaf</h2><p>渲染 XML/XHTML/HTML5d 内容的模板引擎(与 JSP Velocity FreeMaker 等模板引擎类似,可轻易与 SpringMVC 等 Web 框架集成)[最大特点:不启动 Web 应用也可以直接在浏览器种打开并正确显示模板页面]</p>
 <ul>
 <li>特点:<ul>
@@ -448,47 +653,66 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://example.com/2021/12/13/markdown/ThymeleafStudy/" data-id="ckx5qmb9i001np4uw72ki89o3" data-title="Thymeleaf" class="article-share-link">Share</a>
+    
+    <div class="article-info article-info-index">
       
       
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Thymeleaf/" rel="tag">Thymeleaf</a></li></ul>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
+    </div>
 
-    </footer>
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Thymeleaf/" rel="tag">Thymeleaf</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
   
 </article>
 
 
 
-  
-    <article id="post-markdown/SpringBootWebStatic" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/12/13/markdown/SpringBootWebStatic/" class="article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.306Z" itemprop="datePublished">2021-12-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
-  </div>
 
-  </div>
+
+
+
+
+
+  
+    <article id="post-markdown/SpringBootWebStatic" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/12/13/markdown/SpringBootWebStatic/" class="article-date">
+      <time datetime="2021-12-13T09:58:44.306Z" itemprop="datePublished">2021-12-13</time>
+</a>
+
+
+    </div>
+  
   <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/12/13/markdown/SpringBootWebStatic/">SpringBoot Web Static Source</a>
+      <a class="article-title" href="/2021/12/13/markdown/SpringBootWebStatic/">SpringBoot Web Static Source</a>
     </h1>
   
 
       </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
         <h2 id="spring-boot-starter-web-Web启动器"><a href="#spring-boot-starter-web-Web启动器" class="headerlink" title="spring-boot-starter-web (Web启动器)"></a>spring-boot-starter-web (Web启动器)</h2><blockquote>
 <ul>
 <li>Spring MVC 为 Spring 提供的基于MVC设计模式的轻量级 Web 开发框架, 其本身就是 Spring 框架的一部分,可与 Spring 框架无缝集成,性能优越</li>
@@ -712,47 +936,66 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://example.com/2021/12/13/markdown/SpringBootWebStatic/" data-id="ckx5qmb8t000kp4uwd4kxfalv" data-title="SpringBoot Web Static Source" class="article-share-link">Share</a>
+    
+    <div class="article-info article-info-index">
       
       
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web-Static-Source/" rel="tag">Web Static Source</a></li></ul>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
+    </div>
 
-    </footer>
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web-Static-Source/" rel="tag">Web Static Source</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
   
 </article>
 
 
 
-  
-    <article id="post-markdown/SpringBootWebRegistration" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/12/13/markdown/SpringBootWebRegistration/" class="article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.302Z" itemprop="datePublished">2021-12-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
-  </div>
 
-  </div>
+
+
+
+
+
+  
+    <article id="post-markdown/SpringBootWebRegistration" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/12/13/markdown/SpringBootWebRegistration/" class="article-date">
+      <time datetime="2021-12-13T09:58:44.302Z" itemprop="datePublished">2021-12-13</time>
+</a>
+
+
+    </div>
+  
   <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/12/13/markdown/SpringBootWebRegistration/">SpringBoot Web Registration</a>
+      <a class="article-title" href="/2021/12/13/markdown/SpringBootWebRegistration/">SpringBoot Web Registration</a>
     </h1>
   
 
       </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
         <h2 id="注册Web原生组件"><a href="#注册Web原生组件" class="headerlink" title="注册Web原生组件"></a>注册Web原生组件</h2><p>SpringBoot 默认以Jar包方式部署,默认没有 web.xml 因此不能使用web.xml配置 Servlet Filter Listener SpringBoot 提供2种方法注册:</p>
 <ol>
 <li>通过组件扫描注册</li>
@@ -804,47 +1047,66 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://example.com/2021/12/13/markdown/SpringBootWebRegistration/" data-id="ckx5qmb8p000hp4uw0i0z9pmf" data-title="SpringBoot Web Registration" class="article-share-link">Share</a>
+    
+    <div class="article-info article-info-index">
       
       
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Filter/" rel="tag">Filter</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Listener/" rel="tag">Listener</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Servlet/" rel="tag">Servlet</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
+    </div>
 
-    </footer>
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Filter/" rel="tag">Filter</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Listener/" rel="tag">Listener</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Servlet/" rel="tag">Servlet</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
   
 </article>
 
 
 
-  
-    <article id="post-markdown/SpringBootStarter" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/12/13/markdown/SpringBootStarter/" class="article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.299Z" itemprop="datePublished">2021-12-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
-  </div>
 
-  </div>
+
+
+
+
+
+  
+    <article id="post-markdown/SpringBootStarter" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/12/13/markdown/SpringBootStarter/" class="article-date">
+      <time datetime="2021-12-13T09:58:44.299Z" itemprop="datePublished">2021-12-13</time>
+</a>
+
+
+    </div>
+  
   <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/12/13/markdown/SpringBootStarter/">SpringBoot Starter</a>
+      <a class="article-title" href="/2021/12/13/markdown/SpringBootStarter/">SpringBoot Starter</a>
     </h1>
   
 
       </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
         <h2 id="SpringBoot-自定义-starter"><a href="#SpringBoot-自定义-starter" class="headerlink" title="SpringBoot 自定义 starter"></a>SpringBoot 自定义 starter</h2><ol>
 <li>命名规范<ul>
 <li>官方的 starter 命名形式: spring-boot-starter-xxx </li>
@@ -927,47 +1189,66 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://example.com/2021/12/13/markdown/SpringBootStarter/" data-id="ckx5qmb8m000fp4uwbgyu2uae" data-title="SpringBoot Starter" class="article-share-link">Share</a>
+    
+    <div class="article-info article-info-index">
       
       
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot-Starter/" rel="tag">SpringBoot Starter</a></li></ul>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
+    </div>
 
-    </footer>
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot-Starter/" rel="tag">SpringBoot Starter</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
   
 </article>
 
 
 
-  
-    <article id="post-markdown/SpringBootLog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/12/13/markdown/SpringBootLog/" class="article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.295Z" itemprop="datePublished">2021-12-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
-  </div>
 
-  </div>
+
+
+
+
+
+  
+    <article id="post-markdown/SpringBootLog" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/12/13/markdown/SpringBootLog/" class="article-date">
+      <time datetime="2021-12-13T09:58:44.295Z" itemprop="datePublished">2021-12-13</time>
+</a>
+
+
+    </div>
+  
   <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/12/13/markdown/SpringBootLog/">SpringBoot Log</a>
+      <a class="article-title" href="/2021/12/13/markdown/SpringBootLog/">SpringBoot Log</a>
     </h1>
   
 
       </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
         <h2 id="统一日志框架"><a href="#统一日志框架" class="headerlink" title="统一日志框架"></a>统一日志框架</h2><ul>
 <li>日志:<ol>
 <li>功能<ul>
@@ -1199,47 +1480,66 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://example.com/2021/12/13/markdown/SpringBootLog/" data-id="ckx5qmb8h000bp4uwaudxcwqa" data-title="SpringBoot Log" class="article-share-link">Share</a>
+    
+    <div class="article-info article-info-index">
       
       
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Log/" rel="tag">Log</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
+    </div>
 
-    </footer>
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Log/" rel="tag">Log</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
   
 </article>
 
 
 
-  
-    <article id="post-markdown/SpringBootInternationalization" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/12/13/markdown/SpringBootInternationalization/" class="article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.292Z" itemprop="datePublished">2021-12-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
-  </div>
 
-  </div>
+
+
+
+
+
+  
+    <article id="post-markdown/SpringBootInternationalization" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/12/13/markdown/SpringBootInternationalization/" class="article-date">
+      <time datetime="2021-12-13T09:58:44.292Z" itemprop="datePublished">2021-12-13</time>
+</a>
+
+
+    </div>
+  
   <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/12/13/markdown/SpringBootInternationalization/">SpringBoot Internationalization</a>
+      <a class="article-title" href="/2021/12/13/markdown/SpringBootInternationalization/">SpringBoot Internationalization</a>
     </h1>
   
 
       </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
         <h2 id="SpringBoot-国际化"><a href="#SpringBoot-国际化" class="headerlink" title="SpringBoot 国际化"></a>SpringBoot 国际化</h2><p>国际化(Internationalization 简称I18n 首尾In,中间18个字符) 软件开发时应该支持的多语言和地区功能(开发的软件需要同时应对不同国家和地区的用户访问,并根据用户地区和语言习惯,提供相应的、符合阅读习惯的页面和数据)</p>
 <ul>
 <li>Spring 项目实现国际化的步骤:<ul>
@@ -1304,47 +1604,66 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://example.com/2021/12/13/markdown/SpringBootInternationalization/" data-id="ckx5qmb8f000ap4uwh89ngmsz" data-title="SpringBoot Internationalization" class="article-share-link">Share</a>
+    
+    <div class="article-info article-info-index">
       
       
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Internationalization/" rel="tag">Internationalization</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
+    </div>
 
-    </footer>
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Internationalization/" rel="tag">Internationalization</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
   
 </article>
 
 
 
-  
-    <article id="post-markdown/SpringBootInterceptor" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/12/13/markdown/SpringBootInterceptor/" class="article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.288Z" itemprop="datePublished">2021-12-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
-  </div>
 
-  </div>
+
+
+
+
+
+  
+    <article id="post-markdown/SpringBootInterceptor" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/12/13/markdown/SpringBootInterceptor/" class="article-date">
+      <time datetime="2021-12-13T09:58:44.288Z" itemprop="datePublished">2021-12-13</time>
+</a>
+
+
+    </div>
+  
   <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/12/13/markdown/SpringBootInterceptor/">SpringBoot Interceptor</a>
+      <a class="article-title" href="/2021/12/13/markdown/SpringBootInterceptor/">SpringBoot Interceptor</a>
     </h1>
   
 
       </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
         <h2 id="SpringBoot拦截器"><a href="#SpringBoot拦截器" class="headerlink" title="SpringBoot拦截器"></a>SpringBoot拦截器</h2><ul>
 <li>拦截器:<ul>
 <li>登录校验</li>
@@ -1396,47 +1715,66 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://example.com/2021/12/13/markdown/SpringBootInterceptor/" data-id="ckx5qmb890005p4uwbj5zg4ue" data-title="SpringBoot Interceptor" class="article-share-link">Share</a>
+    
+    <div class="article-info article-info-index">
       
       
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Interceptor/" rel="tag">Interceptor</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
+    </div>
 
-    </footer>
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Interceptor/" rel="tag">Interceptor</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
   
 </article>
 
 
 
-  
-    <article id="post-markdown/SpringBootException" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/12/13/markdown/SpringBootException/" class="article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.284Z" itemprop="datePublished">2021-12-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
-  </div>
 
-  </div>
+
+
+
+
+
+  
+    <article id="post-markdown/SpringBootException" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/12/13/markdown/SpringBootException/" class="article-date">
+      <time datetime="2021-12-13T09:58:44.284Z" itemprop="datePublished">2021-12-13</time>
+</a>
+
+
+    </div>
+  
   <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/12/13/markdown/SpringBootException/">SpringBoot Exception</a>
+      <a class="article-title" href="/2021/12/13/markdown/SpringBootException/">SpringBoot Exception</a>
     </h1>
   
 
       </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
         <h2 id="SpringBoot-异常处理"><a href="#SpringBoot-异常处理" class="headerlink" title="SpringBoot 异常处理"></a>SpringBoot 异常处理</h2><p>SpringBoot提供的默认异常处理机制,会在出现异常时,自动识别客户端的类型(浏览器客户端\机器客户端),依此展示不同异常信息.</p>
 <ol>
 <li>对于浏览器客户端<ul>
@@ -1583,47 +1921,66 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://example.com/2021/12/13/markdown/SpringBootException/" data-id="ckx5qmb8b0006p4uwhdun44p2" data-title="SpringBoot Exception" class="article-share-link">Share</a>
+    
+    <div class="article-info article-info-index">
       
       
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exception/" rel="tag">Exception</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
+    </div>
 
-    </footer>
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exception/" rel="tag">Exception</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
   
 </article>
 
 
 
-  
-    <article id="post-markdown/SpringBootDataBase" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/12/13/markdown/SpringBootDataBase/" class="article-date">
-  <time class="dt-published" datetime="2021-12-13T09:58:44.280Z" itemprop="datePublished">2021-12-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
-  </div>
 
-  </div>
+
+
+
+
+
+  
+    <article id="post-markdown/SpringBootDataBase" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/12/13/markdown/SpringBootDataBase/" class="article-date">
+      <time datetime="2021-12-13T09:58:44.280Z" itemprop="datePublished">2021-12-13</time>
+</a>
+
+
+    </div>
+  
   <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/12/13/markdown/SpringBootDataBase/">SpringBoot DataBase</a>
+      <a class="article-title" href="/2021/12/13/markdown/SpringBootDataBase/">SpringBoot DataBase</a>
     </h1>
   
 
       </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
       
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
         <h2 id="SpringBoot-访问-JDBC-数据库"><a href="#SpringBoot-访问-JDBC-数据库" class="headerlink" title="SpringBoot 访问 JDBC 数据库"></a>SpringBoot 访问 JDBC 数据库</h2><ul>
 <li>导入JDBC场景启动器(starter)<ul>
 <li>引入依赖<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-jdbc<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -1899,143 +2256,113 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="https://example.com/2021/12/13/markdown/SpringBootDataBase/" data-id="ckx5qmb870004p4uw93pxgu9s" data-title="SpringBoot DataBase" class="article-share-link">Share</a>
+    
+    <div class="article-info article-info-index">
       
       
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DataBase/" rel="tag">DataBase</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Log-for-Learn/">Log for Learn</a>
+    </div>
 
-    </footer>
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DataBase/" rel="tag">DataBase</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
   
 </article>
 
 
 
-  
 
 
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-  </nav>
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Log-for-Learn/">Log for Learn</a></li></ul>
-    </div>
-  </div>
+
 
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Configuration/" rel="tag">Configuration</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DataBase/" rel="tag">DataBase</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Exception/" rel="tag">Exception</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Filter/" rel="tag">Filter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Interceptor/" rel="tag">Interceptor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Internationalization/" rel="tag">Internationalization</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Listener/" rel="tag">Listener</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Log/" rel="tag">Log</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Servlet/" rel="tag">Servlet</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot/" rel="tag">SpringBoot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringBoot-Starter/" rel="tag">SpringBoot Starter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Thymeleaf/" rel="tag">Thymeleaf</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web-Static-Source/" rel="tag">Web Static Source</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/YAML/" rel="tag">YAML</a></li></ul>
-    </div>
-  </div>
-
-
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Configuration/" style="font-size: 10px;">Configuration</a> <a href="/tags/DataBase/" style="font-size: 10px;">DataBase</a> <a href="/tags/Exception/" style="font-size: 10px;">Exception</a> <a href="/tags/Filter/" style="font-size: 10px;">Filter</a> <a href="/tags/Interceptor/" style="font-size: 10px;">Interceptor</a> <a href="/tags/Internationalization/" style="font-size: 10px;">Internationalization</a> <a href="/tags/Listener/" style="font-size: 10px;">Listener</a> <a href="/tags/Log/" style="font-size: 10px;">Log</a> <a href="/tags/Servlet/" style="font-size: 10px;">Servlet</a> <a href="/tags/SpringBoot/" style="font-size: 20px;">SpringBoot</a> <a href="/tags/SpringBoot-Starter/" style="font-size: 10px;">SpringBoot Starter</a> <a href="/tags/Thymeleaf/" style="font-size: 10px;">Thymeleaf</a> <a href="/tags/Web-Static-Source/" style="font-size: 10px;">Web Static Source</a> <a href="/tags/YAML/" style="font-size: 10px;">YAML</a>
-    </div>
-  </div>
-
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+    </nav>
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/12/13/markdown/YAMLStudy/">YAML</a>
-          </li>
-        
-          <li>
-            <a href="/2021/12/13/markdown/ThymeleafStudy/">Thymeleaf</a>
-          </li>
-        
-          <li>
-            <a href="/2021/12/13/markdown/SpringBootWebStatic/">SpringBoot Web Static Source</a>
-          </li>
-        
-          <li>
-            <a href="/2021/12/13/markdown/SpringBootWebRegistration/">SpringBoot Web Registration</a>
-          </li>
-        
-          <li>
-            <a href="/2021/12/13/markdown/SpringBootStarter/">SpringBoot Starter</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
+</div>
       <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 VHBin<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2021 VHBin
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
     </div>
-  </div>
 </footer>
-
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
     
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
 
 
-<script src="/js/jquery-3.4.1.min.js"></script>
 
 
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        $("a[target=_blank]").removeAttr("target");
+    
+</script>
 
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
   </div>
 </body>
 </html>
